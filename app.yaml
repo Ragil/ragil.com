@@ -11,7 +11,7 @@ libraries:
 handlers:
 
 - url : /hc/(.*?\.)(js|css|eot|woff2|woff|ttf|jpg|png|svg|gif)
-  static_files : static/\1\2
+  static_files : static/hc/\1\2
   upload : static/hc/.*
   login : admin
   secure : always
@@ -20,7 +20,7 @@ handlers:
   script: redirect.app
 
 - url : /hc/.*
-  static_files : static/index.html
+  static_files : static/hc/index.html
   upload : static/hc/index.html
   login : admin
   secure : always
