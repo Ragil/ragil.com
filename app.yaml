@@ -16,6 +16,9 @@ handlers:
   login : admin
   secure : always
 
+- url : /hc
+  script: redirect.app
+
 - url : /hc/.*
   static_files : static/index.html
   upload : static/hc/index.html
