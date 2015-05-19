@@ -28,7 +28,9 @@ update_repo() {
 cd tmp
 
 update_repo "homecam"
+update_repo "browserphone"
 
 cd ..
 
 copy_frontend "homecam" "hc"
+copy_frontend "browserphone" "phone"
