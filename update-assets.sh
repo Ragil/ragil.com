@@ -19,7 +19,7 @@ update_repo() {
   git reset --hard
   git checkout master
   git pull
-  version=$(git describe --abbrev=0 --tags)
+  version=$(git tag --list | sort -rn | head -n 1)
   git checkout -B "tags/$version"
 
   cd ..
