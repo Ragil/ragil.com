@@ -14,7 +14,6 @@ update_repo() {
   repo="$1"
 
   echo "updating $repo"
-  mkdir -p "$repo"
   cd "$repo"
 
   git reset --hard
@@ -26,7 +25,6 @@ update_repo() {
   cd ..
 }
 
-mkdir -p tmp
 cd tmp
 
 update_repo "homecam"
